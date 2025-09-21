@@ -12,7 +12,7 @@ inputs:
     default: 100  # Provide the default value for n_estimators
   max_depth:
     type: integer  # Specify the type for max_depth
-    default: None  # Provide the default value for max_depth
+    default: -1  # Provide the default value for max_depth
 outputs:
   model_output:
     type: mlflow_model  # Specify the type for model_output
