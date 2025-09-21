@@ -32,7 +32,7 @@ def main(args):  # Write the function name for the main data preparation logic
 
     # Encode categorical feature
     le = LabelEncoder()
-    df['Tyoe'] = le.fit_transform(df['Type'])  # Write code to encode the categorical feature
+    df['Type'] = le.fit_transform(df['Type'])  # Write code to encode the categorical feature
 
     # Split Data into train and test datasets
     train_df, test_df = train_test_split(df, test_size=args.test_train_ratio, random_state=42)  #  Write code to split the data into train and test datasets
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         f"Raw data path: {args.raw_data}",  # Print the raw_data path
         f"Train dataset output path: {args.train_data}",  # Print the train_data path
         f"Test dataset path: {args.test_data}",  # Print the test_data path
-        f"Test-train ratio: {args.tes_train_ratio}",  # Print the test_train_ratio
+        f"Test-train ratio: {args.test_train_ratio}",  # Print the test_train_ratio
     ]
 
     for line in lines:
