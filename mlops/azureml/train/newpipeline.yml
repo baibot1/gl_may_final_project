@@ -24,6 +24,7 @@ settings:
 
 jobs:
   prep_data:
+    type: command
     name: prep_data  # Provide the job name
     display_name: prep-data  # Provide the display name for the job
     code: ../../../data-science/src
